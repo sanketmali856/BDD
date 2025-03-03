@@ -47,4 +47,7 @@ public class landingpage {
 		driver.findElement(procedToclick).click();
 		Thread.sleep(8000);
 	}
+	public void TetsingGit () {
+		
+	}
 }

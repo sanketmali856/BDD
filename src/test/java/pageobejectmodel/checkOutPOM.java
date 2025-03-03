@@ -17,6 +17,7 @@ public class checkOutPOM {
 		 Thread.sleep(5000);
 		 String porodutNameAtcheckout=  driver.findElement(ProductAtchekout).getText().split("-")[0].trim();
 		 System.out.println(porodutNameAtcheckout);
+		 System.out.println("New Change for testing");
 		 return porodutNameAtcheckout;
 	}
 }
