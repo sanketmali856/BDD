@@ -2,63 +2,111 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-03T20:16:00 IST" name="Default suite" finished-at="2025-02-03T20:17:03 IST" duration-ms="63165">
+  <suite started-at="2025-03-20T17:54:50 IST" name="Default suite" finished-at="2025-03-20T17:54:52 IST" duration-ms="1849">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumaberOptions.FailedTestNGrunner@20d525]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumaberOptions.TestNGrunner@55b0dcab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-03T20:16:00 IST" name="Default test" finished-at="2025-02-03T20:17:03 IST" duration-ms="63165">
-      <class name="cucumaberOptions.FailedTestNGrunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumaberOptions.FailedTestNGrunner@20d525]" started-at="2025-02-03T20:16:00 IST" name="setUpClass" finished-at="2025-02-03T20:16:01 IST" duration-ms="1218" status="PASS">
+    <test started-at="2025-03-20T17:54:50 IST" name="Default test" finished-at="2025-03-20T17:54:52 IST" duration-ms="1849">
+      <class name="cucumaberOptions.TestNGrunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumaberOptions.TestNGrunner@55b0dcab]" started-at="2025-03-20T17:54:50 IST" name="setUpClass" finished-at="2025-03-20T17:54:51 IST" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@34e20e6b]]>
+                <![CDATA[org.testng.TestRunner@73ad4ecc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumaberOptions.FailedTestNGrunner@20d525]" started-at="2025-02-03T20:16:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-03T20:17:02 IST" duration-ms="61174" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumaberOptions.TestNGrunner@55b0dcab]" started-at="2025-03-20T17:54:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-20T17:54:51 IST" duration-ms="336" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search the produt in search in both home and offers with different data"]]>
+                <![CDATA["Update the naukari resume hedline."]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Search and plance the order for products"]]>
+                <![CDATA["Naukari Profile update"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
-              <![CDATA[expected [Beetroot] but found [No data]]]>
+              <![CDATA[The step 'user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@856' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@{int}")
+public void user_is_on_the_nakuri_login_page_and_signed_in_suceefully_with_sanketmali4091_gmail_com_and_sanket(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user udpated the resume headline")
+public void user_udpated_the_resume_headline() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the success msg displayed")
+public void the_success_msg_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Beetroot] but found [No data]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepdefinations.offerspage.verify_both_name_are_same_or_not(offerspage.java:70)
-at ✽.verify both name are same or not(file:///C:/Users/Shubham%20Shetti/eclipse-workspace/CucumbarFramework/src/test/java/Featuresfiles/searchproduct.feature:16)
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@856' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@{int}")
+public void user_is_on_the_nakuri_login_page_and_signed_in_suceefully_with_sanketmali4091_gmail_com_and_sanket(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user udpated the resume headline")
+public void user_udpated_the_resume_headline() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the success msg displayed")
+public void the_success_msg_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumaberOptions.FailedTestNGrunner@20d525]" started-at="2025-02-03T20:17:02 IST" name="tearDownClass" finished-at="2025-02-03T20:17:03 IST" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumaberOptions.TestNGrunner@55b0dcab]" started-at="2025-03-20T17:54:51 IST" name="tearDownClass" finished-at="2025-03-20T17:54:52 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumaberOptions.FailedTestNGrunner -->
+      </class> <!-- cucumaberOptions.TestNGrunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

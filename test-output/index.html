@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shubham Shetti\AppData\Local\Temp\testng-eclipse-1204702515\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse--1996137705\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="cucumaberOptions.FailedTestNGrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search the produt in search in both home and offers with different data&quot;, &quot;Search and plance the or...)">runScenario("Search the produt in search in both home and offers with different data", "Search and plance the or...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="cucumaberOptions.TestNGrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update the naukari resume hedline.&quot;, &quot;Naukari Profile update&quot;)">runScenario("Update the naukari resume hedline.", "Naukari Profile update")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,24 +121,54 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">cucumaberOptions.FailedTestNGrunner</span>
+              <span class="class-name">cucumaberOptions.TestNGrunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search the produt in search in both home and offers with different data&quot;, &quot;Search and plance the or...)">
-                  </a> <!-- runScenario("Search the produt in search in both home and offers with different data", "Search and plance the or...) -->
+                  <a name="runScenario(&quot;Update the naukari resume hedline.&quot;, &quot;Naukari Profile update&quot;)">
+                  </a> <!-- runScenario("Update the naukari resume hedline.", "Naukari Profile update") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search the produt in search in both home and offers with different data","Search and plance the order for products")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Beetroot] but found [No data]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepdefinations.offerspage.verify_both_name_are_same_or_not(offerspage.java:70)
-	at ✽.verify both name are same or not(file:///C:/Users/Shubham%20Shetti/eclipse-workspace/CucumbarFramework/src/test/java/Featuresfiles/searchproduct.feature:16)
+                  <span class="parameters">("Update the naukari resume hedline.","Naukari Profile update")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@856&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;user is on the nakuri login page and signed in suceefully with sanketmali4091@gmail.com and Sanket@{int}&quot;)
+public void user_is_on_the_nakuri_login_page_and_signed_in_suceefully_with_sanketmali4091_gmail_com_and_sanket(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;user udpated the resume headline&quot;)
+public void user_udpated_the_resume_headline() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the success msg displayed&quot;)
+public void the_success_msg_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -150,7 +180,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shubham Shetti\AppData\Local\Temp\testng-eclipse-1204702515\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse--1996137705\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,7 +189,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cucumaberOptions.FailedTestNGrunner&quot;/&gt;
+      &lt;class name=&quot;cucumaberOptions.TestNGrunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -210,13 +240,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'cucumaberOptions.FailedTestNGrunner')
-data.setCell(0, 3, 61174);
+data.setCell(0, 2, 'cucumaberOptions.TestNGrunner')
+data.setCell(0, 3, 336);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 336 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,20 +272,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cucumaberOptions.FailedTestNGrunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">cucumaberOptions.TestNGrunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@34e20e6b)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@73ad4ecc)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Search the produt in search in both home and offers with different data", "Search and plance the or...)</span>
-                <span class="method-start">1250 ms</span>
+                <span class="method-name">runScenario("Update the naukari resume hedline.", "Naukari Profile update")</span>
+                <span class="method-start">1056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">62442 ms</span>
+                <span class="method-start">1401 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
