@@ -71,5 +71,9 @@ public class GenricUtiils {
 		JavascriptExecutor js=  (JavascriptExecutor) driver;
 		js.executeScript("argument[0].scrollIntoView(true)",wb);
 	}
+	
+	public void testing(WebElement wb) {
+		
+	}
 
 }
