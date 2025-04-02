@@ -2,6 +2,8 @@ package pageobejectmodel;
 
 import org.openqa.selenium.WebDriver;
 
+import Utils.Testcontextsetup;
+
 
 public class pageObjectManager {
 	
@@ -9,9 +11,13 @@ public class pageObjectManager {
 	public landingpage landingPageObj;
 	public offersPagePOM offerPageObje;
 	public checkOutPOM checkOutObj;
+	public naukriMainPage naukriMainPageObj;
+	public NaukriDashBoard naukriDashBoardObj;
+	public Testcontextsetup testcontextsetup;
 	
 	public pageObjectManager(WebDriver driver) {
 		this.driver= driver;
+		
 	}
 	
 	public landingpage getLandingPage() {
@@ -29,6 +35,15 @@ public class pageObjectManager {
 		return checkOutObj;
 	}
 	
+	public naukriMainPage getNaukriPage() {
+		naukriMainPageObj = new naukriMainPage(driver);
+		return naukriMainPageObj;
+	}
 	
+	public NaukriDashBoard getNaukriDashbaord() {
+		naukriDashBoardObj = new NaukriDashBoard(driver);
+		return naukriDashBoardObj;
+	}
+
 
 }

@@ -8,4 +8,4 @@ Then the success msg displayed
 
 Examples:
 |Username                 |Password  |
-|sanketmali4091@gmail.com |Sanket@856|
+|sanketmali856@gmail.com |Sanket@856|
