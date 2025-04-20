@@ -3,6 +3,7 @@ package pageobejectmodel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import Utils.GenricUtiils;
 import Utils.Testcontextsetup;
 
 public class NaukriDashBoard {
@@ -29,7 +30,7 @@ public class NaukriDashBoard {
 			String serchboxtext =driver.findElement(SearchBox).getText();
 			System.out.println(serchboxtext);
 			Thread.sleep(2000);
-			//testcontextsetup.genricUtiils.implicitwait(5);
+			GenricUtiils.implicitwait(5, driver );
 			driver.findElement(ProfileIcon).click();
 			Thread.sleep(2000);
 			driver.findElement(View_Update_Profile).click();

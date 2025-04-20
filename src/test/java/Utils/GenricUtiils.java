@@ -75,11 +75,11 @@ public class GenricUtiils {
 		js.executeScript("argument[0].scrollIntoView(true)",wb);
 	}
 	
-	public void implicitwait(int timeinsecond) {
+	public static void implicitwait(int timeinsecond,  WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeinsecond));
 	}
 	
-	public void explicitWait(WebElement wb) {
+	public  void explicitWait(WebElement wb) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(wb));
 	}
