@@ -3,6 +3,7 @@ package pageobejectmodel;
 import org.openqa.selenium.WebDriver;
 
 import Utils.Testcontextsetup;
+import stepdefinations.OrangeHrmLogin;
 
 
 public class pageObjectManager {
@@ -14,6 +15,7 @@ public class pageObjectManager {
 	public naukriMainPage naukriMainPageObj;
 	public NaukriDashBoard naukriDashBoardObj;
 	public Testcontextsetup testcontextsetup;
+	public OrangeHRMPOM OrangeHrmLoginObj;
 	
 	public pageObjectManager(WebDriver driver) {
 		this.driver= driver;
@@ -45,5 +47,9 @@ public class pageObjectManager {
 		return naukriDashBoardObj;
 	}
 
+	public OrangeHRMPOM getOrangeHrmLogin() {
+		OrangeHrmLoginObj = new OrangeHRMPOM(driver);
+		return OrangeHrmLoginObj;
+	}
 
 }
