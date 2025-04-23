@@ -30,14 +30,24 @@ public class OrangeHrmLogin {
     }
 
 
-@When("Clicks on the login button")
-public void clicks_on_the_login_button() {
-    
-}
-@Then("User should be navigated to the dashboard page")
-public void user_should_be_navigated_to_the_dashboard_page() {
-    
-}
-    
+    @When("Clicks on the login button")
+    public void clicks_on_the_login_button() throws InterruptedException {
+        OrangeHrmLoginObj.login_Button_Click();
+    }
 
+    @Then("User should be navigated to the dashboard page")
+    public void user_should_be_navigated_to_the_dashboard_page() {
+        OrangeHrmLoginObj.dashbaordHeading_visible();
+    }
+    
+    @When("^User enters invalid (.+) and (.+)$")
+    public void user_enters_invalid_admin_and_admin1234(String username , String password ) throws InterruptedException {
+        OrangeHrmLoginObj.orangeHrmLogin(username, password);
+    }
+
+    @Then("Error message {string} should be displayed")
+    public void error_message_should_be_displayed(String string) {
+   
+    }
+    
 }

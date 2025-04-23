@@ -7,5 +7,5 @@ When user udpated the resume headline
 Then the success msg displayed
 
 Examples:
-|Username                 |Password  |
+|Username                |Password  |
 |sanketmali856@gmail.com |Sanket@856|

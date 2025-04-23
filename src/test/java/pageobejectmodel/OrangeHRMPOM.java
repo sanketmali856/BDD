@@ -19,13 +19,16 @@ import org.testng.Assert;
 
 public class OrangeHRMPOM {
 
-	public WebDriver driver;
-	Testcontextsetup testcontextsetup;
+		public WebDriver driver;
+		Testcontextsetup testcontextsetup;
 	
-	public OrangeHRMPOM(WebDriver driver) {
+		public OrangeHRMPOM(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-	}
+		}
+
+		By invalidError= By.xpath("//*[text()='Invalid credentials']");
+
 		@FindBy(xpath = "//input[@name='username']")
 		private WebElement Username_textBox;
 
@@ -48,8 +51,14 @@ public class OrangeHRMPOM {
 			Username_textBox.sendKeys(username);
 			Thread.sleep(4000);
 			passwordTextBox.sendKeys(password);
+		} 
+
+		public void login_Button_Click() throws InterruptedException{
 			login_Button.click();
 			Thread.sleep(4000);
+		}
+
+		public void dashbaordHeading_visible(){
 			GenricUtiils.explicitWait(dashbaordHeading, driver);
 			Assert.assertTrue(dashbaordHeading.isDisplayed(), "Dashboard not visible!");
 			try {
@@ -58,8 +67,15 @@ public class OrangeHRMPOM {
 			} catch (Exception e) {
 				System.out.println("Dashboard not visible!");
 			}
-			
-		} 
+		}
 
-	
+		public void invalid_Error_Validation(String msg){
+			try{
+			Assert.assertTrue(driver.findElement(invalidError).isDisplayed(),"Invalid username and password");
+			System.out.println("Invalid username and password enterd");
+			}
+			catch(Exception e){
+				Assert.fail();
+			}
+		}
 }
